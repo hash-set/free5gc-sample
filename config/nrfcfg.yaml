@@ -24,6 +24,5 @@ configuration:
 # debugLevel: how detailed to output, value: trace, debug, info, warn, error, fatal, panic
 # ReportCaller: enable the caller report or not, value: true or false
 logger:
-  NRF:
-    debugLevel: info
-    ReportCaller: false
+  level: info
+  reportCaller: false

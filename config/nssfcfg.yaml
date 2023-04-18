@@ -1,5 +1,5 @@
 info:
-  version: 1.0.1
+  version: 1.0.2
   description: NSSF initial local configuration
 
 configuration:
@@ -350,6 +350,5 @@ configuration:
 # debugLevel: how detailed to output, value: trace, debug, info, warn, error, fatal, panic
 # ReportCaller: enable the caller report or not, value: true or false
 logger:
-  NSSF:
-    debugLevel: info
-    ReportCaller: false
+  level: info
+  reportCaller: false
