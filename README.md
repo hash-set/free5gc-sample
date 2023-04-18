@@ -1,4 +1,4 @@
-# free5GC tutorial
+# How to run master branch free5GC on Ubuntu-22.04
 
 ![Topology](free5gc-sample.png)
 
