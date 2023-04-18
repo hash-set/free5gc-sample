@@ -33,6 +33,18 @@ Now we are ready, just simply make.
 make
 ```
 
+### configuration
+
+``` shell
+cd free5gc
+mv config config.orig
+ln -s ~/free5gc-sample/config .
+mv run.sh run.sh.orig
+ln -s ~/free5gc-sample/run.sh .
+mv force_kill.sh force_kill.sh.orig
+ln -s ~/free5gc-sample/force_kill.sh .
+```
+
 ## Install gtp5g
 
 gtp5g is kernel module for GTP.  Here is [github](https://github.com/free5gc/gtp5g) of gtp5g.
@@ -73,7 +85,11 @@ go build
 
 We need to install `mongodb` manually on Ubuntu 22.04.
 
-https://dba.stackexchange.com/questions/323069/how-to-install-mongodb-3-6-on-ubuntu-22-04
+Here is a [description](https://dba.stackexchange.com/questions/323069/how-to-install-mongodb-3-6-on-ubuntu-22-04) about it.  Download following package.
+
+https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu1804-3.6.22.tgz
+
+then
 
 ``` shell
 tar xvzf mongodb-linux-x86_64-ubuntu1804-3.6.22.tgz
@@ -95,4 +111,3 @@ git clone git@github.com:aligungr/UERANSIM.git
 cd UERANSIM
 make
 ```
-
