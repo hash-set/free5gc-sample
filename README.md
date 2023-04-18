@@ -111,3 +111,10 @@ git clone git@github.com:aligungr/UERANSIM.git
 cd UERANSIM
 make
 ```
+
+### configuration
+
+``` shell
+mv config config.bak
+ln -s ~/free5gc-sample/ueransim ./configu
+```
