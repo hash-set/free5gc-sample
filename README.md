@@ -1,5 +1,7 @@
 # free5GC tutorial
 
+![Topology](free5gc-sample.png)
+
 ## Install master branch of free5GC
 
 Here is [github](https://github.com/free5gc/free5gc) and [installation guide](https://github.com/free5gc/free5gc/wiki/Installation) of free5GC.
