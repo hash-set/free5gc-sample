@@ -118,5 +118,5 @@ make
 
 ``` shell
 mv config config.bak
-ln -s ~/free5gc-sample/ueransim ./configu
+ln -s ~/free5gc-sample/ueransim ./config
 ```
