@@ -47,17 +47,6 @@ mv force_kill.sh force_kill.sh.orig
 ln -s ~/free5gc-sample/force_kill.sh .
 ```
 
-## Install gtp5g
-
-gtp5g is kernel module for GTP.  Here is [github](https://github.com/free5gc/gtp5g) of gtp5g.
-
-``` shell
-git clone https://github.com/free5gc/gtp5g.git
-cd gtp5g
-make
-sudo make install
-```
-
 ## Install webconsole
 
 webconsole is UI for free5GC. it uses nodejs, so `node` and `yarn` must be
@@ -99,6 +88,17 @@ cd mongodb-linux-x86_64-ubuntu1804-3.6.22/bin
 sudo mv * /usr/local/bin
 sudo mkdir -p /data/db
 sudo chown -r ubuntu /data
+```
+
+## Install gtp5g
+
+gtp5g is kernel module for GTP.  Here is [github](https://github.com/free5gc/gtp5g) of gtp5g.
+
+``` shell
+git clone https://github.com/free5gc/gtp5g.git
+cd gtp5g
+make
+sudo make install
 ```
 
 ## install UERANSIM
