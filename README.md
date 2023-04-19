@@ -72,6 +72,14 @@ cd ..
 go build
 ```
 
+## Launching webconsole
+
+To access from global IP Address, we need to specify URL as:
+
+``` shell
+REACT_APP_HTTP_API_URL=http://54.64.184.35:5000/api PORT=3000 yarn start
+```
+
 ## Install mongodb
 
 We need to install `mongodb` manually on Ubuntu 22.04.
