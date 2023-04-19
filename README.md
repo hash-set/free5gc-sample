@@ -77,7 +77,10 @@ go build
 To access from global IP Address, we need to specify URL as:
 
 ``` shell
+cd ~/free5gc/webconsole/frontend
 REACT_APP_HTTP_API_URL=http://54.64.184.35:5000/api PORT=3000 yarn start
+cd ~/free5gc/webconsole
+./webconsole
 ```
 
 ## Install mongodb
@@ -109,6 +112,13 @@ make
 sudo make install
 ```
 
+## Launching free5gc
+
+``` shell
+cd ~/free5gc
+./run.sh
+```
+
 ## install UERANSIM
 
 Here is [github](https://github.com/aligungr/UERANSIM) of UERANSIM.
@@ -127,4 +137,18 @@ make
 ``` shell
 mv config config.bak
 ln -s ~/free5gc-sample/ueransim ./config
+```
+
+## Launching gNodeB
+
+``` shell
+cd ~/UERANSIM
+sudo ./build/nr-gnb -c ./config/free5gc-gnb.yaml
+```
+
+## Launching UE
+
+``` shell
+cd ~/UERANSIM
+sudo ./build/nr-ue -c ./config/free5gc-ue.yaml
 ```
